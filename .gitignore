@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+
+# Model checkpoints and trained weights
+saved_model/*.h5
+saved_model/*.keras
+saved_model/*.tflite
+*.h5
+*.keras
+*.tflite
+*.onnx
+*.pb
+checkpoints/
+!saved_model/.gitkeep
+
+# Audio datasets & raw recordings
+data/wake_word/*.wav
+data/negative/*.wav
+data/background_noise/*.wav
+*.wav
+*.mp3
+*.flac
+*.zip
+*.tar.gz
+!data/wake_word/.gitkeep
+!data/negative/.gitkeep
+!data/background_noise/.gitkeep
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor and IDE configurations
+.vscode/
+.idea/
+*.swp
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
